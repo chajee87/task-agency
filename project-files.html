@@ -1,0 +1,4276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Project | Front - Admin &amp; Dashboard Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./dist-dashboard/favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./dist-dashboard/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="./dist-dashboard/assets/vendor/tom-select/dist/css/tom-select.bootstrap5.css">
+  <link rel="stylesheet" href="./dist-dashboard/assets/vendor/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="./dist-dashboard/assets/vendor/chart.js/dist/Chart.min.css">
+  <link rel="stylesheet" href="./dist-dashboard/assets/vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="./dist-dashboard/assets/vendor/fullcalendar/main.min.css">
+
+  <!-- CSS Front Template -->
+
+  <link rel="preload" href="./dist-dashboard/assets/css/theme.min.css" data-hs-appearance="default" as="style">
+  <link rel="preload" href="./dist-dashboard/assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
+
+
+  <script>
+            window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","assets/js/demo.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js","assets/js/demo.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./dist-dashboard/src","dist":"./dist-dashboard/dist","build":"./dist-dashboard/build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+            window.hs_config.gulpRGBA = (p1) => {}
+  </script>
+</head>
+
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset">
+
+  <script src="./dist-dashboard/assets/js/hs.theme-appearance.js"></script>
+
+  <script src="./dist-dashboard/assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js"></script>
+
+  <!-- ========== HEADER ========== -->
+
+  <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-container navbar-bordered bg-white">
+    <div class="navbar-nav-wrap collapse navbar-collapse" id="navbarNavDropdown">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./dist-dashboard/index.html" aria-label="Front">
+        <img class="navbar-brand-logo" src="./dist-dashboard/assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
+        <img class="navbar-brand-logo" src="./dist-dashboard/assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
+        <img class="navbar-brand-logo-mini" src="./dist-dashboard/assets/svg/logos/logo-short.svg" alt="Logo" data-hs-theme-appearance="default">
+        <img class="navbar-brand-logo-mini" src="./dist-dashboard/assets/svg/logos-light/logo-short.svg" alt="Logo" data-hs-theme-appearance="dark">
+      </a>
+      <!-- End Logo -->
+
+      <ul class="navbar-nav" style="justify-content: flex-start">
+        <li class="nav-item">
+          <a class="nav-link " href="./project-list.html">Workspace 찾기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./expert-list.html">전문가 찾기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./dist-front/demo-jobs/index.html">서비스 이용방법</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./dist-front/demo-jobs/index.html">FAQ</a>
+        </li>
+      </ul>
+
+      <div class="navbar-nav-wrap-content-end">
+        <!-- Navbar -->
+        <ul class="navbar-nav">
+          <li class="nav-item d-none d-sm-inline-block">
+            <!-- Notification -->
+            <div class="dropdown">
+              <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="navbarNotificationsDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
+                <i class="bi-bell"></i>
+                <span class="btn-status btn-sm-status btn-status-danger"></span>
+              </button>
+
+              <div class="dropdown-menu dropdown-menu-end dropdown-card navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="navbarNotificationsDropdown" style="width: 25rem;">
+                <!-- Header -->
+                <div class="card-header card-header-content-between">
+                  <h4 class="card-title mb-0">Notifications</h4>
+
+                  <!-- Unfold -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary rounded-circle" id="navbarNotificationsDropdownSettings" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="navbarNotificationsDropdownSettings">
+                      <span class="dropdown-header">Settings</span>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-archive dropdown-item-icon"></i> Archive all
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-check2-all dropdown-item-icon"></i> Mark all as read
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-toggle-off dropdown-item-icon"></i> Disable notifications
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-gift dropdown-item-icon"></i> What's new?
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <span class="dropdown-header">Feedback</span>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Unfold -->
+                </div>
+                <!-- End Header -->
+
+                <!-- Nav -->
+                <ul class="nav nav-tabs nav-justified" id="notificationTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#notificationNavOne" id="notificationNavOne-tab" data-bs-toggle="tab" data-bs-target="#notificationNavOne" role="tab" aria-controls="notificationNavOne" aria-selected="true">Messages (3)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#notificationNavTwo" id="notificationNavTwo-tab" data-bs-toggle="tab" data-bs-target="#notificationNavTwo" role="tab" aria-controls="notificationNavTwo" aria-selected="false">Archived</a>
+                  </li>
+                </ul>
+                <!-- End Nav -->
+
+                <!-- Body -->
+                <div class="card-body-height">
+                  <!-- Tab Content -->
+                  <div class="tab-content" id="notificationTabContent">
+                    <div class="tab-pane fade show active" id="notificationNavOne" role="tabpanel" aria-labelledby="notificationNavOne-tab">
+                      <!-- List Group -->
+                      <ul class="list-group list-group-flush navbar-card-list-group">
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck1" checked>
+                                  <label class="form-check-label" for="notificationCheck1"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <img class="avatar avatar-sm avatar-circle" src="./dist-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Brian Warner</h5>
+                              <p class="text-body fs-5">changed an issue from "In Progress" to <span class="badge bg-success">Review</span></p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">2hr</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck2" checked>
+                                  <label class="form-check-label" for="notificationCheck2"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                                  <span class="avatar-initials">K</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Klara Hampton</h5>
+                              <p class="text-body fs-5">mentioned you in a comment</p>
+                              <blockquote class="blockquote blockquote-sm">
+                                Nice work, love! You really nailed it. Keep it up!
+                              </blockquote>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">10hr</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck3" checked>
+                                  <label class="form-check-label" for="notificationCheck3"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-circle">
+                                  <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img10.jpg" alt="Image Description">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Ruby Walter</h5>
+                              <p class="text-body fs-5">joined the Slack group HS Team</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">3dy</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck4">
+                                  <label class="form-check-label" for="notificationCheck4"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-circle">
+                                  <img class="avatar-img" src="./dist-dashboard/assets/svg/brands/google-icon.svg" alt="Image Description">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">from Google</h5>
+                              <p class="text-body fs-5">Start using forms to capture the information of prospects visiting your Google website</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">17dy</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck5">
+                                  <label class="form-check-label" for="notificationCheck5"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-circle">
+                                  <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img7.jpg" alt="Image Description">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Sara Villar</h5>
+                              <p class="text-body fs-5">completed <i class="bi-journal-bookmark-fill text-primary"></i> FD-7 task</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">2mn</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+                      </ul>
+                      <!-- End List Group -->
+                    </div>
+
+                    <div class="tab-pane fade" id="notificationNavTwo" role="tabpanel" aria-labelledby="notificationNavTwo-tab">
+                      <!-- List Group -->
+                      <ul class="list-group list-group-flush navbar-card-list-group">
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck6">
+                                  <label class="form-check-label" for="notificationCheck6"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                                  <span class="avatar-initials">A</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Anne Richard</h5>
+                              <p class="text-body fs-5">accepted your invitation to join Notion</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">1dy</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck7">
+                                  <label class="form-check-label" for="notificationCheck7"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-circle">
+                                  <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img5.jpg" alt="Image Description">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Finch Hoot</h5>
+                              <p class="text-body fs-5">left Slack group HS projects</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">1dy</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck8">
+                                  <label class="form-check-label" for="notificationCheck8"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-dark avatar-circle">
+                                  <span class="avatar-initials">HS</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Htmlstream</h5>
+                              <p class="text-body fs-5">you earned a "Top endorsed" <i class="bi-patch-check-fill text-primary"></i> badge</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">6dy</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck9">
+                                  <label class="form-check-label" for="notificationCheck9"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-circle">
+                                  <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img8.jpg" alt="Image Description">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Linda Bates</h5>
+                              <p class="text-body fs-5">Accepted your connection</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">17dy</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+
+                        <!-- Item -->
+                        <li class="list-group-item form-check-select">
+                          <div class="row">
+                            <div class="col-auto">
+                              <div class="d-flex align-items-center">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="notificationCheck10">
+                                  <label class="form-check-label" for="notificationCheck10"></label>
+                                  <span class="form-check-stretched-bg"></span>
+                                </div>
+                                <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                                  <span class="avatar-initials">L</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Col -->
+
+                            <div class="col ms-n2">
+                              <h5 class="mb-1">Lewis Clarke</h5>
+                              <p class="text-body fs-5">completed <i class="bi-journal-bookmark-fill text-primary"></i> FD-134 task</p>
+                            </div>
+                            <!-- End Col -->
+
+                            <small class="col-auto text-muted text-cap">2mts</small>
+                            <!-- End Col -->
+                          </div>
+                          <!-- End Row -->
+
+                          <a class="stretched-link" href="#"></a>
+                        </li>
+                        <!-- End Item -->
+                      </ul>
+                      <!-- End List Group -->
+                    </div>
+                  </div>
+                  <!-- End Tab Content -->
+                </div>
+                <!-- End Body -->
+
+                <!-- Card Footer -->
+                <a class="card-footer text-center" href="#">
+                  View all notifications <i class="bi-chevron-right"></i>
+                </a>
+                <!-- End Card Footer -->
+              </div>
+            </div>
+            <!-- End Notification -->
+          </li>
+
+          <li class="nav-item d-none d-sm-inline-block">
+            <!-- Apps -->
+            <div class="dropdown">
+              <button type="button" class="btn btn-icon btn-ghost-secondary rounded-circle" id="navbarAppsDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
+                <i class="bi-app-indicator"></i>
+              </button>
+
+              <div class="dropdown-menu dropdown-menu-end dropdown-card navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="navbarAppsDropdown" style="width: 25rem;">
+                <!-- Header -->
+                <div class="card-header">
+                  <h4 class="card-title">Web apps &amp; services</h4>
+                </div>
+                <!-- End Header -->
+
+                <!-- Body -->
+                <div class="card-body card-body-height">
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/atlassian-icon.svg" alt="Image Description">
+                      </div>
+                      <div class="flex-grow-1 text-truncate ms-3">
+                        <h5 class="mb-0">Atlassian</h5>
+                        <p class="card-text text-body">Security and control across Cloud</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/slack-icon.svg" alt="Image Description">
+                      </div>
+                      <div class="flex-grow-1 text-truncate ms-3">
+                        <h5 class="mb-0">Slack <span class="badge bg-primary rounded-pill text-uppercase ms-1">Try</span></h5>
+                        <p class="card-text text-body">Email collaboration software</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
+                      </div>
+                      <div class="flex-grow-1 text-truncate ms-3">
+                        <h5 class="mb-0">Google webdev</h5>
+                        <p class="card-text text-body">Work involved in developing a website</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/frontapp-icon.svg" alt="Image Description">
+                      </div>
+                      <div class="flex-grow-1 text-truncate ms-3">
+                        <h5 class="mb-0">Frontapp</h5>
+                        <p class="card-text text-body">The inbox for teams</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
+                      </div>
+                      <div class="flex-grow-1 text-truncate ms-3">
+                        <h5 class="mb-0">HS Support</h5>
+                        <p class="card-text text-body">Customer service and support</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <div class="avatar avatar-sm avatar-soft-dark">
+                          <span class="avatar-initials"><i class="bi-grid"></i></span>
+                        </div>
+                      </div>
+                      <div class="flex-grow-1 text-truncate ms-3">
+                        <h5 class="mb-0">More Front products</h5>
+                        <p class="card-text text-body">Check out more HS products</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- End Body -->
+
+                <!-- Footer -->
+                <a class="card-footer text-center" href="#">
+                  View all apps <i class="bi-chevron-right"></i>
+                </a>
+                <!-- End Footer -->
+              </div>
+            </div>
+            <!-- End Apps -->
+          </li>
+
+          <li class="nav-item d-none d-sm-inline-block">
+            <!-- Activity -->
+            <button class="btn btn-ghost-secondary btn-icon rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasActivityStream" aria-controls="offcanvasActivityStream">
+              <i class="bi-x-diamond"></i>
+            </button>
+            <!-- Activity -->
+          </li>
+
+          <li class="nav-item">
+            <!-- Account -->
+            <div class="dropdown">
+              <a class="navbar-dropdown-account-wrapper" href="javascript:;" id="accountNavbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
+                <div class="avatar avatar-sm avatar-circle">
+                  <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img6.jpg" alt="Image Description">
+                  <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+                </div>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-end navbar-dropdown-menu navbar-dropdown-menu-borderless navbar-dropdown-account" aria-labelledby="accountNavbarDropdown" style="width: 16rem;">
+                <div class="dropdown-item-text">
+                  <div class="d-flex align-items-center">
+                    <div class="avatar avatar-sm avatar-circle">
+                      <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img6.jpg" alt="Image Description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h5 class="mb-0">Mark Williams</h5>
+                      <p class="card-text text-body">mark@site.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dropdown-divider"></div>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <a class="navbar-dropdown-submenu-item dropdown-item dropdown-toggle" href="javascript:;" id="navSubmenuPagesAccountDropdown1" data-bs-toggle="dropdown" aria-expanded="false">Set status</a>
+
+                  <div class="dropdown-menu dropdown-menu-end navbar-dropdown-menu navbar-dropdown-menu-borderless navbar-dropdown-sub-menu" aria-labelledby="navSubmenuPagesAccountDropdown1">
+                    <a class="dropdown-item" href="#">
+                      <span class="legend-indicator bg-success me-1"></span> Available
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="legend-indicator bg-danger me-1"></span> Busy
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="legend-indicator bg-warning me-1"></span> Away
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"> Reset status
+                    </a>
+                  </div>
+                </div>
+                <!-- End Dropdown -->
+
+                <a class="dropdown-item" href="#">Profile &amp; account</a>
+                <a class="dropdown-item" href="#">Settings</a>
+
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <div class="avatar avatar-sm avatar-dark avatar-circle">
+                        <span class="avatar-initials">HS</span>
+                      </div>
+                    </div>
+                    <div class="flex-grow-1 ms-2">
+                      <h5 class="mb-0">Htmlstream <span class="badge bg-primary rounded-pill text-uppercase ms-1">PRO</span></h5>
+                      <span class="card-text">hs.example.com</span>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="dropdown-divider"></div>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                  <a class="navbar-dropdown-submenu-item dropdown-item dropdown-toggle" href="javascript:;" id="navSubmenuPagesAccountDropdown2" data-bs-toggle="dropdown" aria-expanded="false">Customization</a>
+
+                  <div class="dropdown-menu dropdown-menu-end navbar-dropdown-menu navbar-dropdown-menu-borderless navbar-dropdown-sub-menu" aria-labelledby="navSubmenuPagesAccountDropdown2">
+                    <a class="dropdown-item" href="#">
+                      Invite people
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Analytics
+                      <i class="bi-box-arrow-in-up-right"></i>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Customize Front
+                      <i class="bi-box-arrow-in-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Dropdown -->
+
+                <a class="dropdown-item" href="#">Manage team</a>
+
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="#">Sign out</a>
+              </div>
+            </div>
+            <!-- End Account -->
+          </li>
+        </ul>
+        <!-- End Navbar -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <!-- Navbar Vertical -->
+
+  <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white  ">
+    <div class="navbar-vertical-container">
+      <div class="navbar-vertical-footer-offset">
+        <!-- Logo -->
+
+        <a class="navbar-brand" href="./dist-dashboard/index.html" aria-label="Front">
+          <img class="navbar-brand-logo" src="./dist-dashboard/assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
+          <img class="navbar-brand-logo" src="./dist-dashboard/assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
+          <img class="navbar-brand-logo-mini" src="./dist-dashboard/assets/svg/logos/logo-short.svg" alt="Logo" data-hs-theme-appearance="default">
+          <img class="navbar-brand-logo-mini" src="./dist-dashboard/assets/svg/logos-light/logo-short.svg" alt="Logo" data-hs-theme-appearance="dark">
+        </a>
+
+        <!-- End Logo -->
+
+        <!-- Navbar Vertical Toggle -->
+        <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
+          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+        </button>
+
+        <!-- End Navbar Vertical Toggle -->
+
+        <!-- Content -->
+        <div class="navbar-vertical-content">
+          <div id="navbarVerticalMenu" class="nav nav-pills nav-vertical card-navbar-nav">
+            <div class="nav-item">
+              <a class="nav-link " href="./project-dashboard.html" data-placement="left">
+                <i class="bi-kanban nav-icon"></i>
+                <span class="nav-link-title">Dashboard</span>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link " href="./project-kanban.html" data-placement="left">
+                <i class="bi-calendar-week nav-icon"></i>
+                <span class="nav-link-title">Tasks</span>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link " href="./project-timeline.html" data-placement="left">
+                <i class="bi-calendar-week nav-icon"></i>
+                <span class="nav-link-title">Roadmap</span>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link " href="./project-calender.html" data-placement="left">
+                <i class="bi-calendar-week nav-icon"></i>
+                <span class="nav-link-title">Calender</span>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link " href="./project-members.html" data-placement="left">
+                <i class="bi-receipt nav-icon"></i>
+                <span class="nav-link-title">Members</span>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link " href="./project-channel.html" data-placement="left">
+                <i class="bi-receipt nav-icon"></i>
+                <span class="nav-link-title">Channels</span>
+              </a>
+            </div>
+
+            <div class="nav-item">
+              <a class="nav-link " href="./project-files.html" data-placement="left">
+                <i class="bi-folder2-open nav-icon"></i>
+                <span class="nav-link-title">Files</span>
+              </a>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <!-- End Content -->
+
+        <!-- Footer -->
+<!--        <div class="navbar-vertical-footer">-->
+<!--          <ul class="navbar-vertical-footer-list">-->
+<!--            <li class="navbar-vertical-footer-list-item">-->
+<!--              &lt;!&ndash; Style Switcher &ndash;&gt;-->
+<!--              <div class="dropdown dropup">-->
+<!--                <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="selectThemeDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>-->
+
+<!--                </button>-->
+
+<!--                <div class="dropdown-menu navbar-dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectThemeDropdown">-->
+<!--                  <a class="dropdown-item" href="#" data-icon="bi-moon-stars" data-value="auto">-->
+<!--                    <i class="bi-moon-stars me-2"></i>-->
+<!--                    <span class="text-truncate" title="Auto (system default)">Auto (system default)</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#" data-icon="bi-brightness-high" data-value="default">-->
+<!--                    <i class="bi-brightness-high me-2"></i>-->
+<!--                    <span class="text-truncate" title="Default (light mode)">Default (light mode)</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item active" href="#" data-icon="bi-moon" data-value="dark">-->
+<!--                    <i class="bi-moon me-2"></i>-->
+<!--                    <span class="text-truncate" title="Dark">Dark</span>-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              &lt;!&ndash; End Style Switcher &ndash;&gt;-->
+<!--            </li>-->
+
+<!--            <li class="navbar-vertical-footer-list-item">-->
+<!--              &lt;!&ndash; Other Links &ndash;&gt;-->
+<!--              <div class="dropdown dropup">-->
+<!--                <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="otherLinksDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>-->
+<!--                  <i class="bi-info-circle"></i>-->
+<!--                </button>-->
+
+<!--                <div class="dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="otherLinksDropdown">-->
+<!--                  <span class="dropdown-header">Help</span>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <i class="bi-journals dropdown-item-icon"></i>-->
+<!--                    <span class="text-truncate" title="Resources &amp; tutorials">Resources &amp; tutorials</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <i class="bi-command dropdown-item-icon"></i>-->
+<!--                    <span class="text-truncate" title="Keyboard shortcuts">Keyboard shortcuts</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <i class="bi-alt dropdown-item-icon"></i>-->
+<!--                    <span class="text-truncate" title="Connect other apps">Connect other apps</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <i class="bi-gift dropdown-item-icon"></i>-->
+<!--                    <span class="text-truncate" title="What's new?">What's new?</span>-->
+<!--                  </a>-->
+<!--                  <div class="dropdown-divider"></div>-->
+<!--                  <span class="dropdown-header">Contacts</span>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <i class="bi-chat-left-dots dropdown-item-icon"></i>-->
+<!--                    <span class="text-truncate" title="Contact support">Contact support</span>-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; End Other Links &ndash;&gt;-->
+<!--            </li>-->
+
+<!--            <li class="navbar-vertical-footer-list-item">-->
+<!--              &lt;!&ndash; Language &ndash;&gt;-->
+<!--              <div class="dropdown dropup">-->
+<!--                <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="selectLanguageDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>-->
+<!--                  <img class="avatar avatar-xss avatar-circle" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">-->
+<!--                </button>-->
+
+<!--                <div class="dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectLanguageDropdown">-->
+<!--                  <span class="dropdown-header">Select language</span>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <img class="avatar avatar-xss avatar-circle me-2" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">-->
+<!--                    <span class="text-truncate" title="English">English (US)</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <img class="avatar avatar-xss avatar-circle me-2" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">-->
+<!--                    <span class="text-truncate" title="English">English (UK)</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <img class="avatar avatar-xss avatar-circle me-2" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">-->
+<!--                    <span class="text-truncate" title="Deutsch">Deutsch</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <img class="avatar avatar-xss avatar-circle me-2" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">-->
+<!--                    <span class="text-truncate" title="Dansk">Dansk</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <img class="avatar avatar-xss avatar-circle me-2" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">-->
+<!--                    <span class="text-truncate" title="Italiano">Italiano</span>-->
+<!--                  </a>-->
+<!--                  <a class="dropdown-item" href="#">-->
+<!--                    <img class="avatar avatar-xss avatar-circle me-2" src="./dist-dashboard/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">-->
+<!--                    <span class="text-truncate" title="中文 (繁體)">中文 (繁體)</span>-->
+<!--                  </a>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              &lt;!&ndash; End Language &ndash;&gt;-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+        <!-- End Footer -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- End Navbar Vertical -->
+
+  <main id="content" role="main" class="main">
+    <!-- Content -->
+    <div class="content container-fluid">
+      <div class="page-header">
+        <div class="d-flex mb-3">
+          <!-- Avatar -->
+          <div class="flex-shrink-0">
+            <div class="avatar avatar-lg avatar-4x3">
+              <img class="avatar-img" src="./dist-dashboard/assets/svg/brands/guideline-icon.svg" alt="Image Description">
+            </div>
+          </div>
+          <!-- End Avatar -->
+
+          <div class="flex-grow-1 ms-4">
+            <div class="row">
+              <div class="col-lg mb-3 mb-lg-0">
+                <h1 class="page-header-title">Cloud computing web service</h1>
+
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                    <span>Client:</span>
+                    <a href="#">Htmlstream</a>
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-auto">
+                    <div class="row align-items-center g-0">
+                      <div class="col-auto">Due date:</div>
+
+                      <!-- Flatpickr -->
+                      <div class="col flatpickr-custom-position-fix-sm-down">
+                        <div id="projectDeadlineFlatpickr" class="js-flatpickr flatpickr-custom flatpickr-custom-borderless input-group input-group-sm" data-hs-flatpickr-options='{
+                                "appendTo": "#projectDeadlineFlatpickr",
+                                "dateFormat": "d/m/Y",
+                                "wrap": true
+                              }'>
+                          <input type="text" class="flatpickr-custom-form-control form-control" placeholder="Select dates" data-input value="29/06/2020">
+                          <div class="input-group-append input-group-text ps-0" data-bs-toggle>
+                            <i class="bi-chevron-down"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Flatpickr -->
+                    </div>
+                  </div>
+                  <!-- End Col -->
+
+                  <div class="col-auto">
+                    <!-- Select -->
+                    <div class="tom-select-custom">
+                      <select class="js-select form-select form-select-sm form-select-borderless tom-select-form-select-ps-0" id="ownerLabel" autocomplete="off" data-hs-tom-select-options='{
+                                "searchInDropdown": false,
+                                "hideSearch": true,
+                                "dropdownWidth": "12rem"
+                              }'>
+                        <option value="owner1" selected data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle" src="./dist-dashboard/assets/img/160x160/img6.jpg" alt="Avatar" /><span class="flex-grow-1 ms-2">Mark Williams</span></span>'>Mark Williams</option>
+                        <option value="owner2" data-option-template='<span class="d-flex align-items-center"><img class="avatar avatar-xss avatar-circle" src="./dist-dashboard/assets/img/160x160/img10.jpg" alt="Avatar" /><span class="flex-grow-1 ms-2">Amanda Harvey</span></span>'>Amanda Harvey</option>
+                        <option value="owner3" data-option-template='<span class="d-flex align-items-center"><i class="bi-person text-body"></i><span class="flex-grow-1 ms-2">Assign to owner</span></span>'>Assign to owner</option>
+                      </select>
+                    </div>
+                    <!-- End Select -->
+                  </div>
+                  <!-- End Col -->
+                </div>
+                <!-- End Row -->
+              </div>
+              <!-- End Col -->
+
+              <div class="col-lg-auto">
+                <span class="text-cap small">Team members:</span>
+
+                <div class="d-flex">
+                  <!-- Avatar Group -->
+                  <div class="avatar-group avatar-circle me-3">
+                    <a class="avatar" href="./dist-dashboard/user-profile.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Amanda Harvey">
+                      <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img10.jpg" alt="Image Description">
+                    </a>
+                    <a class="avatar" href="./dist-dashboard/user-profile.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Linda Bates">
+                      <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img9.jpg" alt="Image Description">
+                    </a>
+                    <a class="avatar avatar-soft-info" href="./dist-dashboard/user-profile.html" data-bs-toggle="tooltip" data-bs-placement="top" title="#digitalmarketing">
+                      <span class="avatar-initials">
+                        <i class="bi-people-fill"></i>
+                      </span>
+                    </a>
+                    <a class="avatar" href="./dist-dashboard/user-profile.html" data-bs-toggle="tooltip" data-bs-placement="top" title="David Harrison">
+                      <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
+                    </a>
+                    <a class="avatar avatar-soft-dark" href="./dist-dashboard/user-profile.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Antony Taylor">
+                      <span class="avatar-initials">A</span>
+                    </a>
+
+                    <a class="avatar avatar-light avatar-circle" href="javascript:;" data-bs-toggle="modal" data-bs-target="#shareWithPeopleModal">
+                      <span class="avatar-initials">+2</span>
+                    </a>
+                  </div>
+                  <!-- End Avatar Group -->
+
+                  <a class="btn btn-primary btn-icon rounded-circle" href="javascript:;" data-bs-toggle="modal" data-bs-target="#shareWithPeopleModal">
+                    <i class="bi-share-fill"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+        <!-- End Media -->
+
+        <!-- Nav -->
+        <!-- Nav -->
+        <!-- End Nav -->
+      </div>
+      <h2 class="h4 mb-3">Folders</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mb-5">
+        <div class="col mb-3 mb-lg-5">
+          <!-- Card -->
+          <div class="card card-sm card-hover-shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="bi-folder-plus fs-2 text-body me-2"></i>
+
+                <h5 class="text-truncate ms-2 mb-0">Premium images</h5>
+
+                <!-- Dropdown -->
+                <div class="dropdown ms-auto">
+                  <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="folderDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi-three-dots-vertical"></i>
+                  </button>
+
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="folderDropdown1" style="min-width: 13rem;">
+                    <span class="dropdown-header">Settings</span>
+
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-share dropdown-item-icon"></i> Share folder
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-star dropdown-item-icon"></i> Add to stared
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-pencil dropdown-item-icon"></i> Rename
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-download dropdown-item-icon"></i> Download
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-trash dropdown-item-icon"></i> Delete
+                    </a>
+                  </div>
+                </div>
+                <!-- End Dropdown -->
+              </div>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3 mb-lg-5">
+          <!-- Card -->
+          <div class="card card-sm card-hover-shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="bi-folder fs-2 text-body me-2"></i>
+
+                <h5 class="text-truncate ms-2 mb-0">Front materials</h5>
+
+                <!-- Dropdown -->
+                <div class="dropdown ms-auto">
+                  <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="folderDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi-three-dots-vertical"></i>
+                  </button>
+
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="folderDropdown2" style="min-width: 13rem;">
+                    <span class="dropdown-header">Settings</span>
+
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-share dropdown-item-icon"></i> Share folder
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-star dropdown-item-icon"></i> Add to stared
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-pencil dropdown-item-icon"></i> Rename
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-download dropdown-item-icon"></i> Download
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-trash dropdown-item-icon"></i> Delete
+                    </a>
+                  </div>
+                </div>
+                <!-- End Dropdown -->
+              </div>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col mb-3 mb-lg-5">
+          <!-- Card -->
+          <div class="card card-sm card-hover-shadow h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <i class="bi-folder fs-2 text-body me-2"></i>
+
+                <h5 class="text-truncate ms-2 mb-0">Illustrations</h5>
+
+                <!-- Dropdown -->
+                <div class="dropdown ms-auto">
+                  <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="folderDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi-three-dots-vertical"></i>
+                  </button>
+
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="folderDropdown3" style="min-width: 13rem;">
+                    <span class="dropdown-header">Settings</span>
+
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-share dropdown-item-icon"></i> Share folder
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-star dropdown-item-icon"></i> Add to stared
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-pencil dropdown-item-icon"></i> Rename
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-download dropdown-item-icon"></i> Download
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="bi-trash dropdown-item-icon"></i> Delete
+                    </a>
+                  </div>
+                </div>
+                <!-- End Dropdown -->
+              </div>
+            </div>
+            <a class="stretched-link" href="#"></a>
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <div class="row align-items-center mb-2">
+        <div class="col">
+          <h2 class="h4 mb-0">Files</h2>
+        </div>
+
+        <div class="col-auto">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="connectionsTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" href="#grid" role="tab" aria-controls="grid" aria-selected="true" title="Column view">
+                <i class="bi-grid"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="list-tab" data-bs-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false" title="List view">
+                <i class="bi-view-list"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+      </div>
+      <div class="tab-content" id="connectionsTabContent">
+        <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+          <!-- Folders -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">25kb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown1" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">WordPress contract terms</h5>
+                  <p class="small">Updated 50 min ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">1mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown2" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/pdf-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Dashboard layout flow</h5>
+                  <p class="small">Updated 1 hour ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">3mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown3" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-slides-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">WordPress theme presentation</h5>
+                  <p class="small">Updated 5 hours ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">1mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown4" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown4" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Untitled</h5>
+                  <p class="small">Updated 5 hours ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">3mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown5" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown5" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-sheets-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Hot startups 2019 - Report</h5>
+                  <p class="small">Updated 3 weeks ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">2mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown6" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown6" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Marketing strategy</h5>
+                  <p class="small">Updated 2 weeks ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">15mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown7" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown7" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/components/placeholder-img-format.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Past-experiences.jpg</h5>
+                  <p class="small">Updated 1 month ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">9mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown8" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown8" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/components/placeholder-img-format.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Front_2018.jpg</h5>
+                  <p class="small">Updated 1 month ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col mb-3 mb-lg-5">
+              <!-- Card -->
+              <div class="card card-sm card-hover-shadow card-header-borderless h-100 text-center">
+                <div class="card-header card-header-content-between border-0">
+                  <span class="small">4mb</span>
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm card-dropdown-btn rounded-circle" id="filesGridDropdown9" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi-three-dots-vertical"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesGridDropdown9" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+
+                <div class="card-body">
+                  <img class="avatar avatar-4x3" src="./dist-dashboard/assets/svg/brands/pdf-icon.svg" alt="Image Description">
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Business opportunities</h5>
+                  <p class="small">Updated 2 months ago</p>
+                </div>
+
+                <a class="stretched-link" href="#"></a>
+              </div>
+              <!-- End Card -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Folders -->
+        </div>
+
+        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+          <ul class="list-group">
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">WordPress contract terms</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 50 min ago</li>
+                    <li class="list-inline-item">25kb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown1" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/pdf-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Dashboard layout flow</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 1 hour ago</li>
+                    <li class="list-inline-item">1mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown2" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-slides-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">WordPress theme presentation</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 5 hours ago</li>
+                    <li class="list-inline-item">3mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown3" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Untitled</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 5 hours ago</li>
+                    <li class="list-inline-item">1mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown4" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown4" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-sheets-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Hot startup 2019 - Report</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 3 weeks ago</li>
+                    <li class="list-inline-item">3mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown5" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown5" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/google-docs-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Marketing strategy</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 2 weeks ago</li>
+                    <li class="list-inline-item">2mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown6" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown6" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/components/placeholder-img-format.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Past-experience.jpg</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 1 month ago</li>
+                    <li class="list-inline-item">15mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown7" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown7" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/components/placeholder-img-format.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Front_2018.jpg</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 1 month ago</li>
+                    <li class="list-inline-item">9mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown8" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown8" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+
+            <!-- List Item -->
+            <li class="list-group-item">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img class="avatar avatar-xs avatar-4x3" src="./dist-dashboard/assets/svg/brands/pdf-icon.svg" alt="Image Description">
+                </div>
+                <!-- End Col -->
+
+                <div class="col">
+                  <h5 class="mb-0">
+                    <a class="text-dark" href="#">Business opportunities</a>
+                  </h5>
+                  <ul class="list-inline list-separator small text-body">
+                    <li class="list-inline-item">Updated 2 months ago</li>
+                    <li class="list-inline-item">4mb</li>
+                  </ul>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-white btn-sm" id="filesListDropdown9" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="d-none d-sm-inline-block me-1">More</span>
+                      <i class="bi-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filesListDropdown9" style="min-width: 13rem;">
+                      <span class="dropdown-header">Settings</span>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-share dropdown-item-icon"></i> Share file
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-folder-plus dropdown-item-icon"></i> Move to
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-star dropdown-item-icon"></i> Add to stared
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-pencil dropdown-item-icon"></i> Rename
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-download dropdown-item-icon"></i> Download
+                      </a>
+
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi-trash dropdown-item-icon"></i> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Dropdown -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </li>
+            <!-- End List Item -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="row justify-content-between align-items-center">
+        <div class="col">
+          <p class="fs-6 mb-0">&copy; Front. <span class="d-none d-sm-inline-block">2022 Htmlstream.</span></p>
+        </div>
+        <!-- End Col -->
+
+        <div class="col-auto">
+          <div class="d-flex justify-content-end">
+            <!-- List Separator -->
+            <ul class="list-inline list-separator">
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">FAQ</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">License</a>
+              </li>
+
+              <li class="list-inline-item">
+                <!-- Keyboard Shortcuts Toggle -->
+                <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts" aria-controls="offcanvasKeyboardShortcuts">
+                  <i class="bi-command"></i>
+                </button>
+                <!-- End Keyboard Shortcuts Toggle -->
+              </li>
+            </ul>
+            <!-- End List Separator -->
+          </div>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+
+    <!-- End Footer -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Keyboard Shortcuts -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts" aria-labelledby="offcanvasKeyboardShortcutsLabel">
+    <div class="offcanvas-header">
+      <h4 id="offcanvasKeyboardShortcutsLabel" class="mb-0">Keyboard shortcuts</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="list-group list-group-sm list-group-flush list-group-no-gutters mb-5">
+        <div class="list-group-item">
+          <h5 class="mb-1">Formatting</h5>
+        </div>
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span class="fw-semi-bold">Bold</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">b</kbd>
+            </div>
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <em>italic</em>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">i</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <u>Underline</u>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">u</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <s>Strikethrough</s>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <!-- End Col -->
+            </div>
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span class="small">Small text</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <mark>Highlight</mark>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">e</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+      </div>
+
+      <div class="list-group list-group-sm list-group-flush list-group-no-gutters mb-5">
+        <div class="list-group-item">
+          <h5 class="mb-1">Insert</h5>
+        </div>
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Mention person <a href="#">(@Brian)</a></span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">@</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Link to doc <a href="#">(+Meeting notes)</a></span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">+</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <a href="#">#hashtag</a>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">#hashtag</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Date</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">/date</kbd>
+              <kbd class="d-inline-block mb-1">Space</kbd>
+              <kbd class="d-inline-block mb-1">/datetime</kbd>
+              <kbd class="d-inline-block mb-1">/datetime</kbd>
+              <kbd class="d-inline-block mb-1">Space</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Time</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">/time</kbd>
+              <kbd class="d-inline-block mb-1">Space</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Note box</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">/note</kbd>
+              <kbd class="d-inline-block mb-1">Enter</kbd>
+              <kbd class="d-inline-block mb-1">/note red</kbd>
+              <kbd class="d-inline-block mb-1">/note red</kbd>
+              <kbd class="d-inline-block mb-1">Enter</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+      </div>
+
+      <div class="list-group list-group-sm list-group-flush list-group-no-gutters mb-5">
+        <div class="list-group-item">
+          <h5 class="mb-1">Editing</h5>
+        </div>
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Find and replace</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">r</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Find next</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">n</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Find previous</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">p</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Indent</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Tab</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Un-indent</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Tab</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Move line up</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1"><i class="bi-arrow-up-short"></i></kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Move line down</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1"><i class="bi-arrow-down-short fs-5"></i></kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Add a comment</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">m</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Undo</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">z</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Redo</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">y</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+      </div>
+
+      <div class="list-group list-group-sm list-group-flush list-group-no-gutters">
+        <div class="list-group-item">
+          <h5 class="mb-1">Application</h5>
+        </div>
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Create new doc</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">n</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Present</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">p</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Share</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Search docs</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">o</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+        <div class="list-group-item">
+          <div class="row align-items-center">
+            <div class="col-5">
+              <span>Keyboard shortcuts</span>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-7 text-end">
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">/</kbd>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Keyboard Shortcuts -->
+
+  <!-- Activity -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream" aria-labelledby="offcanvasActivityStreamLabel">
+    <div class="offcanvas-header">
+      <h4 id="offcanvasActivityStreamLabel" class="mb-0">Activity stream</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Step -->
+      <ul class="step step-icon-sm step-avatar-sm">
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <div class="step-avatar">
+              <img class="step-avatar" src="./dist-dashboard/assets/img/160x160/img9.jpg" alt="Image Description">
+            </div>
+
+            <div class="step-content">
+              <h5 class="mb-1">Iana Robinson</h5>
+
+              <p class="fs-5 mb-1">Added 2 files to task <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fd-7</a></p>
+
+              <ul class="list-group list-group-sm">
+                <!-- List Item -->
+                <li class="list-group-item list-group-item-light">
+                  <div class="row gx-1">
+                    <div class="col-6">
+                      <!-- Media -->
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs" src="./dist-dashboard/assets/svg/brands/excel-icon.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-2">
+                          <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
+                          <span class="d-block small text-muted">12kb</span>
+                        </div>
+                      </div>
+                      <!-- End Media -->
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-6">
+                      <!-- Media -->
+                      <div class="d-flex">
+                        <div class="flex-shrink-0">
+                          <img class="avatar avatar-xs" src="./dist-dashboard/assets/svg/brands/word-icon.svg" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-truncate ms-2">
+                          <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
+                          <span class="d-block small text-muted">4kb</span>
+                        </div>
+                      </div>
+                      <!-- End Media -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </li>
+                <!-- End List Item -->
+              </ul>
+
+              <span class="small text-muted text-uppercase">Now</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-soft-dark">B</span>
+
+            <div class="step-content">
+              <h5 class="mb-1">Bob Dean</h5>
+
+              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-6</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
+
+              <span class="small text-muted text-uppercase">Today</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <div class="step-avatar">
+              <img class="step-avatar-img" src="./dist-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
+            </div>
+
+            <div class="step-content">
+              <h5 class="h5 mb-1">Crane</h5>
+
+              <p class="fs-5 mb-1">Added 5 card to <a href="#">Payments</a></p>
+
+              <ul class="list-group list-group-sm">
+                <li class="list-group-item list-group-item-light">
+                  <div class="row gx-1">
+                    <div class="col">
+                      <img class="img-fluid rounded" src="./dist-dashboard/assets/svg/components/card-1.svg" alt="Image Description">
+                    </div>
+                    <div class="col">
+                      <img class="img-fluid rounded" src="./dist-dashboard/assets/svg/components/card-2.svg" alt="Image Description">
+                    </div>
+                    <div class="col">
+                      <img class="img-fluid rounded" src="./dist-dashboard/assets/svg/components/card-3.svg" alt="Image Description">
+                    </div>
+                    <div class="col-auto align-self-center">
+                      <div class="text-center">
+                        <a href="#">+2</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <span class="small text-muted text-uppercase">May 12</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-soft-info">D</span>
+
+            <div class="step-content">
+              <h5 class="mb-1">David Lidell</h5>
+
+              <p class="fs-5 mb-1">Added a new member to Front Dashboard</p>
+
+              <span class="small text-muted text-uppercase">May 15</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <div class="step-avatar">
+              <img class="step-avatar-img" src="./dist-dashboard/assets/img/160x160/img7.jpg" alt="Image Description">
+            </div>
+
+            <div class="step-content">
+              <h5 class="mb-1">Rachel King</h5>
+
+              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-3</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
+
+              <span class="small text-muted text-uppercase">Apr 29</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <div class="step-avatar">
+              <img class="step-avatar-img" src="./dist-dashboard/assets/img/160x160/img5.jpg" alt="Image Description">
+            </div>
+
+            <div class="step-content">
+              <h5 class="mb-1">Finch Hoot</h5>
+
+              <p class="fs-5 mb-1">Earned a "Top endorsed" <i class="bi-patch-check-fill text-primary"></i> badge</p>
+
+              <span class="small text-muted text-uppercase">Apr 06</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+
+        <!-- Step Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-soft-primary">
+              <i class="bi-person-fill"></i>
+            </span>
+
+            <div class="step-content">
+              <h5 class="mb-1">Project status updated</h5>
+
+              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-3</a> as <span class="badge bg-soft-primary text-primary rounded-pill"><span class="legend-indicator bg-primary"></span>"In progress"</span></p>
+
+              <span class="small text-muted text-uppercase">Feb 10</span>
+            </div>
+          </div>
+        </li>
+        <!-- End Step Item -->
+      </ul>
+      <!-- End Step -->
+
+      <div class="d-grid">
+        <a class="btn btn-white" href="javascript:;">View all <i class="bi-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- End Activity -->
+
+  <!-- Welcome Message Modal -->
+  <div class="modal fade" id="welcomeMessageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-close">
+          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi-x-lg"></i>
+          </button>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <div class="modal-body p-sm-5">
+          <div class="text-center">
+            <div class="w-75 w-sm-50 mx-auto mb-4">
+              <img class="img-fluid" src="./dist-dashboard/assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="img-fluid" src="./dist-dashboard/assets/svg/illustrations-light/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="dark">
+            </div>
+
+            <h4 class="h1">Welcome to Front</h4>
+
+            <p>We're happy to see you in our community.</p>
+          </div>
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer d-block text-center py-sm-5">
+          <small class="text-cap text-muted">Trusted by the world's best teams</small>
+
+          <div class="w-85 mx-auto">
+            <div class="row justify-content-between">
+              <div class="col">
+                <img class="img-fluid" src="./dist-dashboard/assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./dist-dashboard/assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./dist-dashboard/assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+              </div>
+              <div class="col">
+                <img class="img-fluid" src="./dist-dashboard/assets/svg/brands/layar-gray.svg" alt="Image Description">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+
+  <!-- End Welcome Message Modal -->
+
+  <!-- Share with people Modal -->
+  <div class="modal fade" id="shareWithPeopleModal" tabindex="-1" aria-labelledby="shareWithPeopleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="shareWithPeopleModalLabel">Invite users</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <!-- Form -->
+          <div class="mb-4">
+            <div class="input-group mb-2 mb-sm-0">
+              <input type="text" class="form-control" name="fullName" placeholder="Search name or emails" aria-label="Search name or emails">
+
+              <div class="input-group-append input-group-append-last-sm-down-none">
+                <!-- Select -->
+                <div class="tom-select-custom tom-select-custom-end">
+                  <select class="js-select form-select tom-select-custom-form-select-invite-user" autocomplete="off" data-hs-tom-select-options='{
+                            "searchInDropdown": false,
+                            "hideSearch": true,
+                            "dropdownWidth": "11rem"
+                          }'>
+                    <option value="guest" selected>Guest</option>
+                    <option value="can edit">Can edit</option>
+                    <option value="can comment">Can comment</option>
+                    <option value="full access">Full access</option>
+                  </select>
+                </div>
+                <!-- End Select -->
+
+                <a class="btn btn-primary d-none d-sm-inline-block" href="javascript:;">Invite</a>
+              </div>
+            </div>
+
+            <a class="btn btn-primary w-100 d-sm-none" href="javascript:;">Invite</a>
+          </div>
+          <!-- End Form -->
+
+          <!-- List Group -->
+          <ul class="list-unstyled list-py-2">
+            <!-- Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <span class="icon icon-soft-dark icon-sm icon-circle">
+                    <i class="bi-people-fill"></i>
+                  </span>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="text-body mb-0">#digitalmarketing</h5>
+                      <span class="d-block fs-6">8 members</span>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest">Guest</option>
+                          <option value="can edit" selected>Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="avatar avatar-sm avatar-circle">
+                    <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="text-body mb-0">David Harrison</h5>
+                      <span class="d-block fs-6">david@site.com</span>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest">Guest</option>
+                          <option value="can edit" selected>Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="avatar avatar-sm avatar-circle">
+                    <img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img9.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="text-body mb-0">Ella Lauda <i class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top endorsed"></i></h5>
+                      <span class="d-block fs-6">Markvt@site.com</span>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest">Guest</option>
+                          <option value="can edit" selected>Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End Item -->
+
+            <!-- Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <span class="icon icon-soft-dark icon-sm icon-circle">
+                    <i class="bi-people-fill"></i>
+                  </span>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="text-body mb-0">#conference</h5>
+                      <span class="d-block fs-6">3 members</span>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest">Guest</option>
+                          <option value="can edit" selected>Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End Item -->
+          </ul>
+          <!-- End List Group -->
+
+          <!-- Form Switch -->
+          <label class="row form-check form-switch" for="addTeamPreferencesNewProjectSwitch1">
+            <span class="col-8 col-sm-9 ms-0">
+              <i class="bi-bell text-primary me-2"></i>
+              <span class="text-dark">Inform all project members</span>
+            </span>
+            <span class="col-4 col-sm-3 text-end">
+              <input type="checkbox" class="form-check-input" id="addTeamPreferencesNewProjectSwitch1" checked>
+            </span>
+          </label>
+          <!-- End Form Switch -->
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <div class="row align-items-center flex-grow-1 mx-n2">
+            <div class="col-sm-9 mb-2 mb-sm-0">
+              <input type="hidden" id="publicShareLinkClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/">
+
+              <p class="modal-footer-text">The public share <a class="link" href="#">link settings</a>
+                <i class="bi-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The public share link allows people to view the project without giving access to full collaboration features."></i>
+              </p>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-sm-3 text-sm-end">
+              <a class="js-clipboard btn btn-white btn-sm text-nowrap" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard!" data-hs-clipboard-options='{
+                  "type": "tooltip",
+                  "successText": "Copied!",
+                  "contentTarget": "#publicShareLinkClipboard",
+                  "container": "#shareWithPeopleModal"
+                 }'>
+                <i class="bi-link me-1"></i> Copy link</a>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+  <!-- End Share with people Modal -->
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="./dist-dashboard/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./dist-dashboard/assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+
+  <script src="./dist-dashboard/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/tom-select/dist/js/tom-select.complete.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/daterangepicker/moment.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="./dist-dashboard/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/appear/dist/appear.min.js"></script>
+  <script src="./dist-dashboard/assets/vendor/circles.js/circles.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="./dist-dashboard/assets/js/theme.min.js"></script>
+  <script src="./dist-dashboard/assets/js/hs.theme-appearance-charts.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF DATERANGEPICKER
+      // =======================================================
+      $('.js-daterangepicker').daterangepicker();
+
+      $('.js-daterangepicker-times').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'M/DD hh:mm A'
+        }
+      });
+
+      var start = moment();
+      var end = moment();
+
+      function cb(start, end) {
+        $('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      }
+
+      $('#js-daterangepicker-predefined').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+
+      cb(start, end);
+    });
+  </script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      window.onload = function () {
+
+
+        // INITIALIZATION OF NAVBAR VERTICAL ASIDE
+        // =======================================================
+        new HSSideNav('.js-navbar-vertical-aside').init()
+
+
+        // INITIALIZATION OF FORM SEARCH
+        // =======================================================
+        new HSFormSearch('.js-form-search')
+
+
+        // INITIALIZATION OF BOOTSTRAP DROPDOWN
+        // =======================================================
+        HSBsDropdown.init()
+
+
+        // INITIALIZATION OF NAV SCROLLER
+        // =======================================================
+        new HsNavScroller('.js-nav-scroller')
+
+
+        // INITIALIZATION OF SELECT
+        // =======================================================
+        HSCore.components.HSTomSelect.init('.js-select')
+
+
+        // INITIALIZATION OF CIRCLES
+        // =======================================================
+        const colors = () => {
+          return [HSThemeAppearance.getAppearance() === 'dark' ? '#34383b' : '#e7eaf3', '#377dff']
+        }
+
+        setTimeout(() => {
+          document.querySelectorAll('.js-circle').forEach(item => {
+            HSCore.components.HSCircles.init(item, {
+              colors: colors()
+            })
+          })
+
+          window.addEventListener('on-hs-appearance-change', () => {
+            HSCore.components.HSCircles.getItems().forEach(circle => {
+              circle.updateColors(colors())
+            })
+          })
+        })
+
+
+        // INITIALIZATION OF CLIPBOARD
+        // =======================================================
+        HSCore.components.HSClipboard.init('.js-clipboard')
+
+
+        // INITIALIZATION OF CHARTJS
+        // =======================================================
+        HSCore.components.HSChartJS.init('.js-chart')
+
+
+        // INITIALIZATION OF MATRIX CHARTJS WITH CHARTJS MATRIX PLUGIN
+        // =======================================================
+        function generateHoursData() {
+          var data = [];
+          var dt = moment().subtract(365, 'days').startOf('day');
+          var end = moment().startOf('day');
+          while (dt <= end) {
+            data.push({
+              x: dt.format('YYYY-MM-DD'),
+              y: dt.format('e'),
+              d: dt.format('YYYY-MM-DD'),
+              v: Math.random() * 24
+            });
+            dt = dt.add(1, 'day');
+          }
+          return data;
+        }
+
+        HSCore.components.HSChartMatrixJS.init('.js-chart-matrix', {
+          data: {
+            datasets: [{
+              label: 'Commits',
+              data: generateHoursData(),
+              width: function (ctx) {
+                var a = ctx.chart.chartArea;
+                return (a.right - a.left) / 70;
+              },
+              height: function (ctx) {
+                var a = ctx.chart.chartArea;
+                return (a.bottom - a.top) / 10;
+              }
+            }]
+          },
+          options: {
+            tooltips: {
+              callbacks: {
+                title: function () {
+                  return '';
+                },
+                label: function (item, data) {
+                  var v = data.datasets[item.datasetIndex].data[item.index];
+
+                  if (v.v.toFixed() > 0) {
+                    return '<span class="font-weight-bold">' + v.v.toFixed() + 'hours</span> on ' + v.d;
+                  } else {
+                    return '<span class="font-weight-bold">No time</span> on ' + v.d;
+                  }
+                }
+              }
+            },
+            scales: {
+              xAxes: [{
+                position: 'bottom',
+                type: 'time',
+                offset: true,
+                time: {
+                  unit: 'week',
+                  round: 'week',
+                  displayFormats: {
+                    week: 'MMM'
+                  }
+                },
+                ticks: {
+                  "labelOffset": 20,
+                  "maxRotation": 0,
+                  "minRotation": 0,
+                  "fontSize": 12,
+                  "fontColor": "rgba(22, 52, 90, 0.5)",
+                  "maxTicksLimit": 12,
+                },
+                gridLines: {
+                  display: false
+                }
+              }],
+              yAxes: [{
+                type: 'time',
+                offset: true,
+                time: {
+                  unit: 'day',
+                  parser: 'e',
+                  displayFormats: {
+                    day: 'ddd'
+                  }
+                },
+                ticks: {
+                  "fontSize": 12,
+                  "fontColor": "rgba(22, 52, 90, 0.5)",
+                  "maxTicksLimit": 2,
+                },
+                gridLines: {
+                  display: false
+                }
+              }]
+            }
+          }
+        });
+
+        HSCore.components.HSChartJS.init('#updatingDoughnutChart')
+        const updatingDoughnutChart = HSCore.components.HSChartJS.getItem('updatingDoughnutChart')
+
+        // Datasets for chart, can be loaded from AJAX request
+        const updatingDoughnutChartDatasets = [
+          [
+            [45, 25, 30]
+          ],
+          [
+            [35, 50, 15]
+          ]
+        ]
+
+        // Set datasets for chart when page is loaded
+        const setDataChart = function () {
+          updatingDoughnutChart.data.datasets.forEach(function (dataset, key) {
+            dataset.data = updatingDoughnutChartDatasets[0][key];
+          })
+
+          updatingDoughnutChart.update()
+        }
+
+        setDataChart()
+
+        window.addEventListener('on-hs-appearance-change', e => {
+          setDataChart()
+        })
+
+        // Call when tab is clicked
+        document.querySelectorAll('[data-bs-toggle="chart-doughnut"]').forEach(item => {
+          item.addEventListener('click', e => {
+            let keyDataset = e.currentTarget.getAttribute('data-datasets')
+
+            // Update datasets for chart
+            updatingDoughnutChart.data.datasets.forEach(function (dataset, key) {
+              dataset.data = updatingDoughnutChartDatasets[keyDataset][key]
+            })
+            updatingDoughnutChart.update()
+          })
+        })
+
+
+        // INITIALIZATION OF FLATPICKR
+        // =======================================================
+        HSCore.components.HSFlatpickr.init('.js-flatpickr')
+      }
+    })()
+  </script>
+
+  <!-- Style Switcher JS -->
+
+  <script>
+      (function () {
+        // STYLE SWITCHER
+        // =======================================================
+        const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger
+        const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`) // All items of the dropdown
+
+        // Function to set active style in the dorpdown menu and set icon for dropdown trigger
+        const setActiveStyle = function () {
+          $variants.forEach($item => {
+            if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
+              $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
+              return $item.classList.add('active')
+            }
+
+            $item.classList.remove('active')
+          })
+        }
+
+        // Add a click event to all items of the dropdown to set the style
+        $variants.forEach(function ($item) {
+          $item.addEventListener('click', function () {
+            HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
+          })
+        })
+
+        // Call the setActiveStyle on load page
+        setActiveStyle()
+
+        // Add event listener on change style to call the setActiveStyle function
+        window.addEventListener('on-hs-appearance-change', function () {
+          setActiveStyle()
+        })
+      })()
+    </script>
+
+  <script>
+    (function() {
+      window.onload = function () {
+
+
+
+        // INITIALIZATION OF FORM SEARCH
+        // =======================================================
+        new HSFormSearch('.js-form-search')
+
+
+        // INITIALIZATION OF BOOTSTRAP DROPDOWN
+        // =======================================================
+        HSBsDropdown.init()
+
+
+        // INITIALIZATION OF SELECT
+        // =======================================================
+        HSCore.components.HSTomSelect.init('.js-select', {
+          hideSearch: true
+        })
+
+
+        // INITIALIZATION OF FULLCALENDAR
+        // =======================================================
+        let $popover,
+                filterSearchExample,
+                editableEvent = {}
+
+        const popoverContent = function (data) {
+                  return `
+  					<h3 class="mb-4">${data.event.title}</h3>
+
+  					<div class="d-flex mb-4">
+  						<i class="bi bi-clock nav-icon"></i>
+  						<div class="flex-grow-1">
+  							<span class="d-block text-dark mb-2">${moment(data.event.start).format('dddd, MMMM DD')} - ${moment(data.event.end).format('dddd, MMMM DD')}</span>
+  							<span class="d-block">Repeat: <span class="text-dark text-capitalize">${data.event.extendedProps.repeatField}</span></span>
+  						</div>
+  					</div>
+
+  					<div class="d-flex mb-4">
+  						<i class="bi bi-people nav-icon"></i>
+  						<div class="flex-grow-1">
+  							<span class="d-block text-dark">${getAvatars(data.event.extendedProps.guestsField) || 'Empty'}</span>
+  						</div>
+  					</div>
+
+  					<div class="d-flex mb-4">
+  						<i class="bi bi-pin-map nav-icon"></i>
+  						<div class="flex-grow-1">
+  							<span class="d-block text-dark">${data.event.extendedProps.eventLocationLabel || 'Empty'}</span>
+  						</div>
+  					</div>
+
+  					<div class="d-flex mb-4">
+  						<i class="bi bi-text-left nav-icon"></i>
+  						<div class="flex-grow-1">
+  							<span class="d-block text-dark">${data.event.extendedProps.eventDescriptionLabel || 'Empty'}</span>
+  						</div>
+  					</div>
+
+  					<div class="d-flex align-items-center mb-4">
+  						<div class="avatar avatar-xs avatar-circle me-2">
+  							<img class="avatar-img" src="./dist-dashboard/assets/img/160x160/img6.jpg" alt="Image Description">
+  						</div>
+  						<div class="flex-grow-1">
+  							<span class="d-block text-dark">Mark Williams</span>
+  						</div>
+  					</div>
+
+  					<div class="d-flex justify-content-end">
+  						<a id="closePopover" href="javascript:;" class="btn btn-sm btn-white me-2">Close</a>
+  						<a id="modal-invoker-${data.event.id}" href="javascript:;" class="btn btn-sm btn-primary">
+  							<i class="bi bi-pencil"></i>
+  							Edit
+  						</a>
+  					</div>
+  			  `;
+                },
+                eventContent = function (data) {
+                  return `
+  					<div>
+  						<div class="fc-event-time">${$gridViewSelect.value === 'timeGridWeek' && !data.allDay ? moment(data.start).format('HH:mm') + '-' + moment(data.end).format('HH:mm') : ''}</div>
+  						<div class="d-flex">
+  							${
+                          data.extendedProps.image
+                                  ? `<img class="avatar avatar-xs me-2" src="${data.extendedProps.image}" alt="Image Description">`
+                                  : ''
+                  }
+  							<span class="fc-event-title fc-sticky">${data.title}</span>
+  						</div>
+  					</div>
+  				`;
+                }
+
+        // Fullcalendar controls
+        const $prevMonthBtn = document.querySelector('[data-fc-prev-month]'),
+                $nextMonthBtn = document.querySelector('[data-fc-next-month]'),
+                $todayBtn = document.querySelector('[data-fc-today]'),
+                $dateTitle = document.querySelector('[data-fc-title]'),
+                $gridViewSelect = document.querySelector('[data-fc-grid-view]')
+
+        // Filter controls
+        const $filterByTitle = document.querySelector('#filter-by-title'),
+                $filters = document.querySelectorAll('[data-filter]')
+
+        // Edit popup fields
+        const $addEventToCalendarModal = document.querySelector("#addEventToCalendarModal"),
+                $titleField = document.querySelector('#eventTitleLabel'),
+                $repeatLabel = document.querySelector('#eventRepeatLabel'),
+                $eventDescriptionLabel = document.querySelector('#eventDescriptionLabel'),
+                $eventLocationLabel = document.querySelector('#eventLocationLabel'),
+                $eventColorLabel = document.querySelector('#eventColorLabel'),
+                $eventGuestsLabel = document.querySelector('#eventGuestsLabel'),
+                $processEvent = document.querySelector('#processEvent'),
+                allMembers = [
+                  {
+                    "value": "Amanda Harvey",
+                    "src": null
+                  }, {
+                    "value": "Clarice Boone",
+                    "src": null
+                  }, {
+                    "value": "Sam Kart",
+                    "src": null
+                  }, {
+                    "value": "Mark Williams",
+                    "src": null
+                  }, {
+                    "value": "Linda Bates",
+                    "src": null
+                  }, {
+                    "value": "Rachel Doe",
+                    "src": null
+                  }, {
+                    "value": "David Harrison",
+                    "src": "./dist-dashboard/assets/img/160x160/img3.jpg"
+                  }, {
+                    "value": "Finch Hoot",
+                    "src": "./dist-dashboard/assets/img/160x160/img5.jpg"
+                  }, {
+                    "value": "Ella Lauda",
+                    "src": "./dist-dashboard/assets/img/160x160/img9.jpg"
+                  }
+                ]
+
+        let guestsField,
+                repeatField,
+                eventColorField,
+                fullcalendarEditable
+
+        // Init popup
+        const addEventToCalendarModal = new bootstrap.Modal($addEventToCalendarModal);
+
+        HSCore.components.HSFlatpickr.init('#eventDateRangeLabel');
+        const eventDateRange = HSCore.components.HSFlatpickr.getItem('eventDateRangeLabel');
+
+        HSCore.components.HSTomSelect.init($eventGuestsLabel, {
+          options: allMembers,
+          render: {
+            option: function (data, escape) {
+              return data.src ? `<div><img class="avatar avatar-xs avatar-circle me-2" src="${data.src}">${data.value}</div>` : `
+                      <div>
+                        <div class="avatar avatar-xs avatar-soft-primary avatar-circle me-2">
+                          <span class="avatar-initials">${data.value.charAt(0)}</span>
+                        </div>
+
+                        ${data.value}
+                      </div>
+                    `
+            },
+            item: function (item, escape) {
+              return item.src ? `<div><img class="avatar avatar-xs avatar-circle me-2" src="${item.src}">${item.value}</div>` : `
+                      <div>
+                        <div class="avatar avatar-xs avatar-soft-primary avatar-circle me-2">
+                          <span class="avatar-initials">${item.value.charAt(0)}</span>
+                        </div>
+
+                        ${item.value}
+                      </div>
+                    `
+            }
+          }
+        })
+
+        guestsField = HSCore.components.HSTomSelect.getItem("eventGuestsLabel")
+        repeatField = HSCore.components.HSTomSelect.getItem("eventRepeatLabel")
+        eventColorField = HSCore.components.HSTomSelect.getItem("eventColorLabel")
+
+        HSCore.components.HSFullCalendar.init('#js-fullcalendar', {
+          events: [
+            {
+              id: 1,
+              title: "English Lesson",
+              start: "2020-12-03",
+              end: "2020-12-03",
+              className: "fullcalendar-custom-event-hs-team",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "weekdays",
+              allDay: true,
+              guestsField: ["David Harrison"]
+            },
+            {
+              id: 2,
+              title: "Spanish Lesson",
+              start: "2020-12-03",
+              end: "2020-12-03",
+              className: "fullcalendar-custom-event-hs-team",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "everyday",
+              allDay: true,
+              guestsField: ["Anne Richard", "Finch Hoot"]
+            },
+            {
+              id: 3,
+              title: "Monthly presentation (in PDF)",
+              start: "2020-12-03 04:00",
+              end: "2020-12-03 05:00",
+              className: "fullcalendar-custom-event-reminders",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "Online",
+              repeatField: "everyday",
+              guestsField: [],
+              image: './dist-dashboard/assets/svg/brands/pdf-icon.svg'
+            },
+            {
+              id: 4,
+              title: "Complete Figma course: Go from zero to hero in Figma",
+              start: "2020-12-06 02:00",
+              end: "2020-12-08 15:00",
+              className: "fullcalendar-custom-event-hs-team",
+              eventDescriptionLabel: "Learn Figma like a Professional! Start from the basics and go all the way to creating your own design!",
+              eventLocationLabel: "Online",
+              repeatField: "never",
+              guestsField: ["Bob Dean", "Ella Lauda", "Lori Hunter", "Costa Quinn"],
+              image: './dist-dashboard/assets/svg/brands/figma-icon.svg'
+            },
+            {
+              id: 5,
+              title: "Independence day",
+              start: "2020-12-01",
+              end: "2020-12-02",
+              className: "fullcalendar-custom-event-holidays",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "never",
+              guestsField: [],
+              image: ''
+            },
+            {
+              id: 6,
+              title: "Teachers day",
+              start: "2020-12-01",
+              end: "2020-12-02",
+              className: "fullcalendar-custom-event-holidays",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "never",
+              guestsField: [],
+              image: ''
+            },
+            {
+              id: 7,
+              title: "Send weekly invoice to John",
+              start: "2020-12-10",
+              end: "2020-12-11",
+              className: "fullcalendar-custom-event-hs-team",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "everyday",
+              allDay: true,
+              guestsField: ["Linda Bates", "Rachel Doe"],
+              image: './dist-dashboard/assets/svg/brands/excel-icon.svg'
+            },
+            {
+              id: 8,
+              title: "Shoot a message to Christina on Slack",
+              start: "2020-12-18",
+              end: "2020-12-20",
+              className: "fullcalendar-custom-event-tasks",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "everyday",
+              guestsField: ["Brian Halligan"],
+              image: './dist-dashboard/assets/svg/brands/slack-icon.svg'
+            },
+            {
+              id: 9,
+              title: "Open a calendar task on Jira",
+              start: "2020-12-03 00:00",
+              end: "2020-12-03 04:00",
+              className: "fullcalendar-custom-event-hs-team",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "never",
+              guestsField: ["Clarice Boone", "Sam Kart", "Mark Williams"],
+              image: './dist-dashboard/assets/svg/brands/jira-icon.svg'
+            },
+            {
+              id: 10,
+              title: "Weekly presentation (in PDF)",
+              start: "2020-12-14",
+              end: "2020-12-17",
+              className: "fullcalendar-custom-event-reminders",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "Online",
+              repeatField: "everyday",
+              guestsField: [],
+              image: './dist-dashboard/assets/svg/brands/pdf-icon.svg'
+            },
+            {
+              id: 11,
+              title: "Launch",
+              start: "2020-12-03 01:00",
+              end: "2020-12-03 02:00",
+              className: "fullcalendar-custom-event-hs-team",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "",
+              repeatField: "everyday",
+              guestsField: []
+            },
+            {
+              id: 12,
+              title: "Make monthly payments via MasterCard",
+              start: "2020-12-11",
+              end: "2020-12-12",
+              className: "fullcalendar-custom-event-tasks",
+              eventDescriptionLabel: "",
+              eventLocationLabel: "Online",
+              repeatField: "everyday",
+              guestsField: [],
+              image: './dist-dashboard/assets/svg/brands/mastercard.svg'
+            }
+          ],
+          initialDate: "2020-12-03",
+          headerToolbar: false,
+          editable: true,
+          defaultAllDay: false,
+          datesSet(dateSet) {
+            $dateTitle.textContent = dateSet.view.title
+          },
+          eventClick: function (event) {
+            // Popover Content
+            const _popoverContent = popoverContent(event);
+
+            if ($popover && $popover._element) {
+              $popover.dispose();
+            }
+
+            // Open Popover
+            $popover = new bootstrap.Popover(event.el, {
+              html: true,
+              content: _popoverContent,
+              template: `
+  							<div class="popover fullcalendar-event-popover" role="tooltip">
+  								<div class="arrow"></div>
+  								<h3 class="popover-header"></h3>
+  								<div class="popover-body"></div>
+  							</div>
+  						`,
+            });
+            $popover.show();
+
+            // Open Popover For Editing
+            event.el.addEventListener('shown.bs.popover', function () {
+              const $invoker = document.querySelector(`#modal-invoker-${event.event.id}`);
+
+              $invoker.addEventListener('click', function () {
+                if ($popover && $popover._element) {
+                  $popover.dispose();
+                }
+
+                prepareData(
+                        event.event.title,
+                        event.event.start,
+                        event.event.end,
+                        event.event
+                );
+              });
+            });
+          },
+          eventContent({event}) {
+            return {
+              html: eventContent(event),
+            };
+          },
+          drop({draggedEl}) {
+            draggedEl.remove();
+          },
+        });
+
+        fullcalendarEditable = HSCore.components.HSFullCalendar.getItem('js-fullcalendar');
+
+        // Events
+        document.addEventListener('click', function (e) {
+          if (
+                  (e.target && e.target.id === 'closePopover' && $popover && $popover._element)
+                  || (e.target && !e.target.closest('.fc-event') && !e.target.closest('.popover') && $popover && $popover._element)
+          ) {
+            $popover.dispose();
+          }
+        });
+
+        document.addEventListener('scroll', function () {
+          if ($popover && $popover._element) {
+            $popover.dispose();
+          }
+        });
+
+        $prevMonthBtn.addEventListener('click', function () {
+          fullcalendarEditable.prev();
+
+          HSCore.hideTooltips();
+        });
+
+        $nextMonthBtn.addEventListener('click', function () {
+          fullcalendarEditable.next();
+
+          HSCore.hideTooltips();
+        });
+
+        $gridViewSelect.addEventListener('change', function (event) {
+          fullcalendarEditable.changeView(event.target.value);
+        });
+
+        $todayBtn.addEventListener('click', function () {
+          fullcalendarEditable.today();
+        });
+        $todayBtn.title = new Date().toDateString();
+
+        $addEventToCalendarModal.addEventListener('hide.bs.modal', function () {
+          $titleField.style.height = 'auto';
+        });
+        $addEventToCalendarModal.addEventListener('show.bs.modal', function () {
+          clearForm();
+        });
+        $addEventToCalendarModal.addEventListener('shown.bs.modal', function () {
+          $titleField.style.height = `${$titleField.scrollHeight}px`;
+
+          $titleField.focus();
+        });
+
+        $titleField.addEventListener('input', function () {
+          $titleField.style.height = `${$titleField.scrollHeight}px`;
+        });
+
+        $processEvent.addEventListener('click', function () {
+          const date = eventDateRange.selectedDates
+
+          if (!Object.keys(editableEvent).length) {
+            fullcalendarEditable.addEvent({
+              id: new Date().getTime(),
+              title: $titleField.value || '(No title)',
+              repeatField: repeatField.getValue(),
+              guestsField: JSON.parse(JSON.stringify(guestsField.getValue())),
+              eventDescriptionLabel: $eventDescriptionLabel.value,
+              eventLocationLabel: $eventLocationLabel.value,
+              start: moment(date[0]).format('YYYY-MM-DD'),
+              end: date.length > 1 ? moment(date[1]).format('YYYY-MM-DD') : moment(date[0]).format('YYYY-MM-DD'),
+              classNames: eventColorField.getValue(),
+            });
+          } else {
+            editableEvent.setProp('title', $titleField.value)
+            editableEvent.setExtendedProp('repeatField', repeatField.getValue())
+            editableEvent.setExtendedProp('guestsField', JSON.parse(JSON.stringify(guestsField.getValue())))
+            editableEvent.setExtendedProp('eventDescriptionLabel', $eventDescriptionLabel.value)
+            editableEvent.setExtendedProp('eventLocationLabel', $eventLocationLabel.value)
+            editableEvent.setProp('classNames', [eventColorField.getValue()])
+            editableEvent.setStart(moment(date[0]).format('YYYY-MM-DD'))
+            editableEvent.setEnd(date.length > 1 ? moment(date[1]).format('YYYY-MM-DD') : moment(date[0]).format('YYYY-MM-DD'))
+          }
+
+          addEventToCalendarModal.hide();
+
+          filterSearchExample.filter();
+        });
+
+        function triggerEvent(el, evt) {
+          const newEvt = document.createEvent('HTMLEvents');
+
+          newEvt.initEvent(evt, false, true);
+
+          el.dispatchEvent(newEvt);
+        }
+
+        // Set Form
+        function prepareData(title, start, end, event = {}) {
+          addEventToCalendarModal.show();
+
+          $processEvent.textContent = 'Save';
+
+          $titleField.value = title;
+
+          eventDateRange.setDate([moment(start).format('MM/DD/YYYY'), moment(end).format('MM/DD/YYYY')])
+
+          if (Object.keys(event).length) {
+            let newTags = [];
+
+            for (let i = 0; i < event.extendedProps.guestsField.length; i += 1) {
+              newTags.push(event.extendedProps.guestsField[i]);
+            }
+
+            guestsField.setValue(newTags);
+
+            repeatField.setValue(event.extendedProps.repeatField)
+            $eventDescriptionLabel.value = event.extendedProps.eventDescriptionLabel
+            $eventLocationLabel.value = event.extendedProps.eventLocationLabel
+            eventColorField.setValue(event.classNames[0])
+
+            triggerEvent($repeatLabel, 'change');
+            triggerEvent($eventColorLabel, 'change');
+
+            editableEvent = event;
+          }
+        }
+
+        // Get Avatar
+        function getAvatar(data) {
+          let member = allMembers.filter(m => m.value === data)
+          if (member.length) {
+            member = member[0]
+          } else {
+            member = {
+              value: data,
+              src: null
+            }
+          }
+
+          return member.src ? `<img class="avatar avatar-xs avatar-circle me-2" src="${member.src}">` : `
+                        <div class="avatar avatar-xs avatar-soft-primary avatar-circle me-2">
+                          <span class="avatar-initials">${member.value.charAt(0)}</span>
+                        </div>
+                    `
+        }
+
+        // Get Avatars HTML
+        function getAvatars(members) {
+          const $ul = document.createElement('ul');
+          $ul.classList.add(
+                  'list-unstyled',
+                  'mb-0'
+          );
+
+          for (let i = 0; i < members.length; i += 1) {
+            const $li = document.createElement('li');
+            $li.classList.add(
+                    'd-flex',
+                    'align-items-center',
+                    'mb-2'
+            );
+            $li.innerHTML = `
+  						${getAvatar(members[i])}
+  						<span>${members[i]}</span>
+  					`;
+
+            $ul.appendChild($li);
+          }
+
+          return members.length > 0 ? $ul.outerHTML : false
+        }
+
+        // Clear Form
+        function clearForm() {
+          $titleField.value = '';
+          $eventDescriptionLabel.value = '';
+          $eventLocationLabel.value = '';
+          repeatField.setValue('everyday')
+          eventColorField.setValue('hs-team');
+          eventDateRange.clear()
+
+          editableEvent = {};
+
+          triggerEvent($repeatLabel, 'change');
+          triggerEvent($eventColorLabel, 'change');
+
+          if (guestsField) {
+            guestsField.clear();
+          }
+
+          $processEvent.text = 'Create Event';
+        }
+
+        // Filter
+        filterSearchExample = new HSFullcalendarFilter(fullcalendarEditable);
+
+        filterSearchExample.addFilter('byTitle', function (event) {
+          return event.title.toLowerCase().indexOf($filterByTitle.value.toLowerCase()) !== -1;
+        })
+
+        filterSearchExample.addFilter('byCategory', function (event) {
+          const selectedCategories = document.querySelectorAll('[data-filter] input:checked');
+          let values = [];
+          let show;
+
+          for (let i = 0; i < selectedCategories.length; i += 1) {
+            values.push(selectedCategories[i].value);
+          }
+
+          if (!selectedCategories.length) {
+            return false;
+          }
+
+          show = false
+
+          for (let i = 0; i < selectedCategories.length; i += 1) {
+            show = values.includes(event.classNames[0]);
+          }
+
+          return show;
+        });
+
+        $filterByTitle.addEventListener('input', function () {
+          filterSearchExample.filter();
+        });
+
+        for (let i = 0; i < $filters.length; i += 1) {
+          $filters[i].addEventListener('change', function () {
+            filterSearchExample.filter();
+          });
+        }
+
+        filterSearchExample.filter();
+
+
+        // ADD DRAGGABLE CLASS FOR CALENDAR
+        // =======================================================
+        const Draggable = FullCalendar.Draggable;
+
+        new Draggable(document.querySelector('#external-events'), {
+          itemSelector: '.fc-event'
+        });
+
+
+        // INITIALIZATION OF NAVBAR VERTICAL ASIDE
+        // =======================================================
+        new HSSideNav('.js-navbar-vertical-aside', {
+          onMini: function () {
+            setTimeout(function () {
+              fullcalendarEditable.updateSize()
+            }, 200)
+          },
+          onFull: function () {
+            setTimeout(function () {
+              fullcalendarEditable.updateSize()
+            }, 200)
+          },
+        }).init()
+
+        setTimeout(() => {
+          fullcalendarEditable.updateSize()
+        }, 100)
+      }
+    })()
+  </script>
+
+  <!-- End Style Switcher JS -->
+</body>
+</html>
